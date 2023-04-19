@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Adventures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="mountain (1).png"  alt="">
+                <div>Alpine Adventures</div>
+                </div>
+                <button class="navbar-toggler" style="background-color: rgba(0,0,0,0); border: 0; "><span
+                    class="navbar-toggler-icon">
+                <svg class="bi bi-list"
+                     fill="white" height="32"
+                     viewBox="0 0 16 16"
+                     width="32"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                           fill-rule="evenodd"/>
+                </svg>
+            </span>
+            </button>
+            <ul class="collapsible">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="hero">
+        <h1>Welcome to Alpine Adventures</h1>
+        <h2>Where adventure meets nature, and memories are made</h2>
+        <a href="#services" class="cta">Explore Services</a>
+    </div>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Welcome to Alpine Adventures – your gateway to the world of adventure and nature. Explore breathtaking destinations, engage in thrilling activities, and experience the beauty of nature like never before. Whether you're an avid adventurer or a nature enthusiast, we've got something for everyone. Join us on an unforgettable journey and create memories that last a lifetime.</p>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-wrapper">
+                    <div class="service">
+                        <div>
+                            <h3>Destination Packages</h3>
+                        <img src="backpack.png" alt="Service 1">
+                        </div>
+                        
+
+                        <p>Explore breathtaking destinations with our all-inclusive packages. From mountains to beaches, we've got it all covered.</p>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <h3>Adventure Activities</h3>
+                            <img src="rafting.png" alt="Service 2">
+                        </div>
+                      
+
+                        <p>Get your adrenaline pumping with our range of adventure activities, including hiking, camping, rafting, paragliding, and more.</p>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <h3 class="bird">Nature Tours</h3>
+                            <img src="humming-bird.png" alt="Service 3"   >
+                          
+                        </div>
+                      
+
+                        <p>Immerse yourself in the beauty of nature with our guided nature tours. Discover flora and fauna like never before.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+            <!-- Testimonials -->
+            <section id="testimonials">
+                <div class="header">
+                <h2>What Our Customers Are Saying</h2>
+                <p> Don't take our word for it - hear it from our happy customers!</p>
+            </div>
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <p>"Alpine Adventures made our family vacation one to remember! The customer service was excellent, and the activities they planned for us were thrilling. We highly recommend them to anyone looking for an adventure-filled holiday."</p>
+                        <cite>- The Johnson Family</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"I have been using Alpine Adventures for my solo travel adventures for over a year now, and they never fail to disappoint. The guides are knowledgeable, friendly, and always have great recommendations on where to go and what to see. Can't recommend them enough!"</p>
+                        <cite>- Sarah Jane</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The team at Alpine Adventures went above and beyond to ensure that our corporate team-building event was a success. From planning the itinerary to executing the activities, everything was seamless. Our team had a blast, and we can't wait to book our next adventure with them."</p>
+                        <cite>- Michael C., CEO</cite>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Contact -->
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form id="contact-form" method="POST" action="send-email.php">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+            <footer>
+                <p>Copyright © 
+                <script>
+                    document.write(new Date().getFullYear());
+                </script> 
+                Aamod Vardhan Pandey. <br> All rights reserved.</p>
+            </footer>
+        </main>
+    
+        <!-- Scripts -->
+        <script src="main.js"></script>
+    
+    </body>
+    
